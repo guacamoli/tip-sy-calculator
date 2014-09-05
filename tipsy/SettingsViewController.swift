@@ -44,10 +44,6 @@ class SettingsViewController: UIViewController {
     }
 
     // Action handlers
-    @IBAction func onBack(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
-    }
-
     @IBAction func onDefaultTipValueChanged(sender: AnyObject) {
         var newDefaultTip = defaultTipControl.selectedSegmentIndex
         saveDefaultTipIndex(newDefaultTip);

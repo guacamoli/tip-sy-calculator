@@ -78,7 +78,7 @@
                     <navigationItem key="navigationItem" title="Tip-sy" id="xlw-2A-pXc">
                         <barButtonItem key="rightBarButtonItem" title="Settings" id="fhU-20-jwl">
                             <connections>
-                                <segue destination="SRy-RT-8RF" kind="modal" identifier="toSettingsSegue" id="l9e-bq-8i3"/>
+                                <segue destination="SRy-RT-8RF" kind="push" identifier="toSettingsSegue" id="l9e-bq-8i3"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -97,35 +97,17 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="750" y="339"/>
+            <point key="canvasLocation" x="685" y="344"/>
         </scene>
-        <!--Title-->
+        <!--Settings-->
         <scene sceneID="Ie5-lD-djf">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t2e-KU-hLG" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="SRy-RT-8RF" customClass="SettingsViewController" customModule="tipsy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="A7V-nc-24e">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" id="sTr-GN-aLe">
-                                <rect key="frame" x="0.0" y="21" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Settings" id="L3n-8C-hEd">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="u0Y-DZ-t23">
-                                            <connections>
-                                                <action selector="onBack:" destination="SRy-RT-8RF" id="omj-bY-tTf"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <view autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="c0D-XQ-ucc">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How much do you usually tip?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="r6L-Vu-YiB">
                                 <rect key="frame" x="21" y="94" width="278" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -155,14 +137,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="2cv-xZ-dTy"/>
+                    <navigationItem key="navigationItem" title="Settings" id="2cv-xZ-dTy">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="dQi-Jg-gKb"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="defaultTipControl" destination="j98-z4-ctp" id="twH-sF-kwC"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="t2e-KU-hLG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1253" y="331"/>
+            <point key="canvasLocation" x="1272" y="344"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cg7-hh-yAi">
