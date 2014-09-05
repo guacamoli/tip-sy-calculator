@@ -74,7 +74,7 @@ class ViewController: UIViewController {
         totalLabel.text = getReadableDollarAmountFromDouble(total)
     }
 
-    @IBAction func handleTap(sender: AnyObject) {
-        view.endEditing(true)
+    @IBAction func onTap(sender: AnyObject) {
+         view.endEditing(true)
     }
 }

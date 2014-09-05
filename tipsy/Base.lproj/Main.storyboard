@@ -90,10 +90,10 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="njd-2S-XNC"/>
+                <tapGestureRecognizer enabled="NO" id="njd-2S-XNC"/>
                 <tapGestureRecognizer id="kZ2-5M-jnr">
                     <connections>
-                        <action selector="handleTap:" destination="vXZ-lx-hvc" id="HZl-oD-oLV"/>
+                        <action selector="onTap:" destination="vXZ-lx-hvc" id="wja-up-qK6"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
